@@ -9,12 +9,7 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Address {
-	@Override
-	public String toString() {
-		return "Address [addressId=" + addressId + ", city=" + city + ", state=" + state + ", country=" + country
-				+ ", emp=" + emp + "]";
-	}
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer addressId;
