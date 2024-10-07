@@ -12,12 +12,6 @@ import jakarta.persistence.OneToMany;
 
 @Entity
 public class Employee {
-	@Override
-	public String toString() {
-		return "Employee [empId=" + empId + ", empName=" + empName + ", empsalary=" + empsalary + ", addr=" + addr
-				+ "]";
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer empId;
